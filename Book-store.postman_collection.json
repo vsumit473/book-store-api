@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0b3194bd-964b-4cea-a28e-d973ba190742",
+		"_postman_id": "a30b1f82-9f0d-4319-a4d0-660ff8137c90",
 		"name": "Book-store",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,12 +11,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/smart/book/",
+					"raw": "http://localhost:9090/smart/book/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "9090",
 					"path": [
 						"smart",
 						"book",
@@ -32,12 +32,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/smart/types/",
+					"raw": "http://localhost:9090/smart/types/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "9090",
 					"path": [
 						"smart",
 						"types",
@@ -103,12 +103,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/smart/book",
+					"raw": "http://localhost:9090/smart/book",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "9090",
 					"path": [
 						"smart",
 						"book"
@@ -138,12 +138,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/smart/book",
+					"raw": "http://localhost:9090/smart/book",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "9090",
 					"path": [
 						"smart",
 						"book"
@@ -165,7 +165,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\":1\n}",
+					"raw": "[6,5,4]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -173,15 +173,22 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/smart/book",
+					"raw": "http://localhost:9090/smart/book/checkout?coupon=SBI",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
+					"port": "9090",
 					"path": [
 						"smart",
-						"book"
+						"book",
+						"checkout"
+					],
+					"query": [
+						{
+							"key": "coupon",
+							"value": "SBI"
+						}
 					]
 				}
 			},
